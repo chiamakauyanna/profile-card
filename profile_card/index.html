@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <main class="profile-card">
+      <div class="profile-header">
+        <img
+          src="/profile.png"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+        />
+      </div>
+      <div class="profile-details">
+        <h2 data-testid="fullName">Chiamaka Uyanna</h2>
+        <h3 data-testid="jobTitle" class="job">Front-End Web Developer</h3>
+
+        <p data-testid="shortBio" class="bio">
+          Frontend web developer passionate about crafting sleek, responsive,
+          and high-performance user interfaces. I specialize in React, Tailwind
+          CSS, and Next.js, building modern web experiences that are both
+          functional and visually appealing.
+        </p>
+        <p data-testid="currentLocation" class="location">
+          <strong>Location: </strong>
+          Delta State, Nigeria
+        </p>
+        <p data-testid="emailAddress" class="email">
+          <strong>Email Address: </strong>
+          Chiamakauyanna@gmail.com
+        </p>
+
+        <div data-testid="socialLinks">
+          <a
+            href="https://linkedin.com/in/chiamakauyanna"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://github.com/chiamakauyanna"
+            target="_blank"
+            class="fa fa-github"
+          ></a>
+        </div>
+        <p data-testid="currentTimeUTC" id="utc-time"></p>
+      </div>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
